@@ -1,0 +1,20 @@
+<form method="post" action="/hats/<%= @hat.id %>">
+	
+	<p>
+		<label for="hat_name">Hat name: </label>
+		<input id="hat_name" type="text" name="hat[name]" value="<%= @hat.name %>">
+	</p>
+	<p>
+		<label for="hat_description">Hat description: </label>
+		<input id="hat_description" type="text" name="hat[description]" value="<%= @hat.description %>">
+	</p>
+	 <p>
+		<label for="hat_awesome">Hat awesome: </label>
+		<input id="hat_awesome" type="number" name="hat[awesome]" value="<%= @hat.awesome%>">
+	</p>
+	<p>
+		<input type="hidden" name="_method" value="put">
+		<input type="submit" value="Update this hat">
+	</p>
+
+</form>

@@ -1,0 +1,7 @@
+<ol>
+	<% @all_hats.each do |hat|%>
+		<li><a href="hats/<%= hat.id %>"><%= hat.name %></a></li>
+		<p><%= hat.description %></p>
+		<p><%= hat.awesome %></p>
+	<% end %>
+</ol>

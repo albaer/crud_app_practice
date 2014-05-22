@@ -1,0 +1,14 @@
+<p><%= @hat.name %></p>
+<p><%= @hat.description %></p>
+<p><%= @hat.awesome %></p>
+
+<p>
+	<form method="post" action="/hats/<%=@hat.id%>">
+		<input type="submit" value="Delete this hat">
+		<input type="hidden" name="_method" value="delete">
+	</form>
+</p>
+
+<p>
+	<a href="/hats/<%=@hat.id%>/edit">Edit this hat</a>
+</p>
